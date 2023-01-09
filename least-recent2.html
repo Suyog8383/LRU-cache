@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  const products = ["apple"];
+  const maxSize = 4;
+  const addElement = (arr, len, elem) => {
+    if (arr.length === 0) {
+      arr.push(elem);
+    } else if (arr.includes(elem)) {
+      let i = arr.indexOf(elem);
+      arr.splice(i, 1);
+      arr.push(elem);
+    } else if (arr.length >= len) {
+      arr.shift();
+      arr.push(elem);
+    } else {
+      arr.push(elem);
+    }
+  };
+
+  addElement(products, maxSize, "apple");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "google");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "mi");
+  addElement(products, maxSize, "palm");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "glue");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "pini");
+  addElement(products, maxSize, "pini");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "kii");
+  addElement(products, maxSize, "kii");
+  addElement(products, maxSize, "kii");
+  addElement(products, maxSize, "kii");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "samsung");
+  addElement(products, maxSize, "glue");
+  addElement(products, maxSize, "fun");
+
+  console.log("@SN ", products);
+</script>
